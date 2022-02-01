@@ -17,9 +17,8 @@ function ListedItemsContainer(){
         <div className="container">
           <div className="team-section-padding-top">
             <InfoComponent
-              titleSm='The art team behind FAPE SOCIAL CLUB has enjoyed success in the film industry, fashion 
-              and gaming.'
-              titleLg='Their work has always gained mainstream recognition and adaptation.'
+              titleSm='Our Collection'
+              titleLg='Collection'
               text='They’ve 
               worked with Marvel, Titan and Warner Bros among others.'
             />

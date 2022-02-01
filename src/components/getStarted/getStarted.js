@@ -5,7 +5,7 @@ import {
 
 	ListedItemsArtwork1} from '../../utils/allImgs'
   import InfoComponent from '../InfoComponent'
-  import "./aboutUs.css"
+  import "./getStarted.css"
   import { useLocation } from "react-router-dom";
   // import BackgroundVideoA from "../../assets/img/test-img/BackgroundVideo.mp4"
   import Ren55 from "../../assets/img/test-img/ren_55.png"
@@ -18,7 +18,7 @@ import {
 
 
 
-const  AboutUs=()=> {
+const  GetStarted=()=> {
 
     const routePath = useLocation();
     const onTop = () => {
@@ -34,9 +34,9 @@ const  AboutUs=()=> {
       <div className="about-top-pad">
         <InfoComponent
               // titleSm='About Us.'
-              titleLg=' 	How we work
+              titleLg=' 	Get Started
               '
-              text=' We source the most valuable assets
+              text=' We have different assets in our collection 
               '
             />
             </div>
@@ -45,13 +45,13 @@ const  AboutUs=()=> {
             <MindSectionInfo
         img={<img src={Image} alt="monkey1"/>}
 
-        titleSmTwo=" Source: "
-        contentTwo="We source the most valuable assets and memorabilia around the globe for our wide range of collectors."
-        titleSmThree=" Share:  "
-        contentThree="Each asset is then digitalised into 500 unique NFTs. Making it easier for you to own a piece of the asset.
+        titleSmTwo=" Browse our collections"
+        contentTwo="We have different assets in our collection ranging from Sports memorabilia and coins to trading cards. "
+        titleSmThree=" Pick your number "
+        contentThree="Each fractionalised piece is uniquely numbered out of 500. Each one is different from the other. 
 "
-        titleSmFour=" Sell: "
-        contentFour="All 500 pieces are then listed on www.opensea.io available for public sale. We are changing the future of fractional ownership.
+        titleSmFour=" OpenSea "
+        contentFour="OpenSea is the biggest NFT marketplace in the world. All of our collections are exclusively on OpenSea. Click this link to sign up now! (link to opensea/latest collection) 
 "
       />
 </div>
@@ -59,4 +59,4 @@ const  AboutUs=()=> {
   );
 }
 
-export default AboutUs;
+export default GetStarted;

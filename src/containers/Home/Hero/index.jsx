@@ -1,5 +1,4 @@
-import Image from "../../../assets/img/test-img/ren_033.png"
-import Video from "../../../assets/img/test-img/BackgroundVideo.mp4"
+import Image from "../../../assets/img/test-img/1.jpg"
 const HeroContainer = () => {
   return (
 
@@ -23,13 +22,13 @@ const HeroContainer = () => {
 
             
             <div className="col-lg-6">
-              <img src={Image} alt="" height="600px" width="600px"/>
+              {/* <img src={Image} alt="" height="600px" width="600px"/> */}
             </div>
             <div className="col-12 col-lg-6 col-md-12">
               <div className="welcome-content">
                 <div className="promo-section">
                   <h3 className="special-head gradient-text">
-                    FAPE is a brand.
+                   SNL is a brand.
                   </h3>
                 </div>
                 <h1>
@@ -38,7 +37,7 @@ const HeroContainer = () => {
                 </h1>
                 <p className="w-text">
 				A collection of 8888 avatars that give you membership access to members-only exclusive 
-benefits and sets up FAPES as next-generation fashion leaders.
+benefits and sets up SNL as next-generation fashion leaders.
                 </p>
                 <div className="dream-btn-group">
                   <button className="btn btn-explore more-btn mr-3">

@@ -16,8 +16,12 @@ import TopCollectionsContainer from "../../components/TopCollections/index";
 import ListedItemsContainer from "../../components/ListedItems/index";
 import Footer from "../Footer/index";
 import AboutUs from "../../components/About/aboutUs";
-import MindMapCards from "../../components/mindMapCards/mindMapCards";
-import TeamSection from "../../components/Team-Section/teamSection";
+import GetStarted from "../../components/getStarted/getStarted";
+import Logo from "../../assets/img/test-img/Logo.jpg"
+
+
+// import MindMapCards from "../../components/mindMapCards/mindMapCards";
+// import TeamSection from "../../components/Team-Section/teamSection";
 
 
 import { Addshrink } from "../../utils";
@@ -86,8 +90,8 @@ function Head({ Title }) {
         <div className="container">
           <AnchorLink className="navbar-brand">
             <span>
-              {/* <img src={NavbarLogo} alt="logo" /> */}
-              <h4 className="navbar-logo-style">FAPE</h4>
+              <img src={Logo} alt="logo" height="100px" width="100px" />
+              {/* <h4 className="navbar-logo-style">FAPE</h4> */}
             </span>
           </AnchorLink>
 
@@ -114,31 +118,37 @@ function Head({ Title }) {
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link" href="#teamSection">
-               Team
+                <AnchorLink className="nav-link" href="#aboutus">
+                 Work
                 </AnchorLink>
               </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#team">
-                  Manifesto
+               Collection
                 </AnchorLink>
               </li>
+              <li className="nav-item">
+                <AnchorLink className="nav-link" href="#getstarted">
+               Get Started
+                </AnchorLink>
+              </li>
+              {/* <li className="nav-item">
+                <AnchorLink className="nav-link" href="#team">
+                  Manifesto
+                </AnchorLink>
+              </li> */}
               {/* <li className="nav-item">
                 <AnchorLink className="nav-link" href="#team">
              NFT
                 </AnchorLink>
               </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <AnchorLink className="nav-link" href="#mindmap">
                   Mind Map
                 </AnchorLink>
-              </li>
-              <li className="nav-item">
-                <AnchorLink className="nav-link" href="#aboutus">
-                  About Us
-                </AnchorLink>
-              </li>
+              </li> */}
+            
 
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#contactus">
@@ -152,26 +162,24 @@ function Head({ Title }) {
       {/* </div> */}
 
       <div>
-        <section id="home" ref={homeRef}>
+        <section id="home">
           <HeroContainer />
         </section>
-        <section id="teamSection" ref={teamSectionRef}>
-          <TeamSection/>
-        </section>
-
-        {/* <section id="manifesto" ref={manifestoRef}>
-          <TopCollectionsContainer />
-        </section> */}
-        <section id="team" ref={teamRef}>
-          <ListedItemsContainer />
-        </section>
-        <section id="mindmap" ref={mindmapRef}>
-          <MindMapCards />
-        </section>
-        <section id="aboutus" ref={aboutusRef}>
+        <section id="aboutus" >
           <AboutUs />
         </section>
-        <section id="contactus" ref={contactusRef}>
+      
+
+      
+        <section id="team" >
+          <ListedItemsContainer />
+        </section>
+        <section id="getstarted" >
+          <GetStarted/>
+        </section>
+      
+       
+        <section id="contactus" >
           <Footer />
         </section>
       </div>

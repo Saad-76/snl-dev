@@ -18,7 +18,7 @@ function Footer(){
 		          <div className="footer-widget about-widget">
 		             <h3 className="has-line-center">About Us</h3>
 		             <div className="widget-content">
-		                <div className="text">FAPE is a brand.
+		                <div className="text">SNL is a brand.
 A new kind of brand that we build together.
 A brand for the metaverse. By the community. </div>
 		                   <ul className="social-links">

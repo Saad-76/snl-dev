@@ -12,6 +12,7 @@ function ListedItemsContainer(){
   // console.log(ListedItemsData , ListedItemsData[0].imgSm)
 
   return(
+    <div className="listed-section-padding">
     <section className="features section-padding-0-100 " id="#team">
 
         <div className="container">
@@ -41,6 +42,7 @@ function ListedItemsContainer(){
             
         </div>
     </section>
+    </div>
   )
 }
 

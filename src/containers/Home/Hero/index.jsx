@@ -10,6 +10,7 @@ const HeroContainer = () => {
     muted={true}
     autoPlay={true}
   />   */}
+  <div className="background-image-home-section">
     <section className="hero-section moving section-padding" id="home">
       <div className="moving-bg "></div>
 
@@ -52,6 +53,7 @@ benefits and sets up SNL as next-generation fashion leaders.
         </div>
       </div>
     </section>
+    </div>
     </>
   );
 };

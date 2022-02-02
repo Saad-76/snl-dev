@@ -16,19 +16,23 @@ import TopCollectionsContainer from "../../components/TopCollections/index";
 import ListedItemsContainer from "../../components/ListedItems/index";
 import Footer from "../Footer/index";
 import AboutUs from "../../components/About/aboutUs";
-import GetStarted from "../../components/getStarted/getStarted";
-import Logo from "../../assets/img/test-img/Logo.jpg"
+import Subscribe from "../../components/Subscribe/subscribe";
 
+import GetStarted from "../../components/getStarted/getStarted";
+import Logo from "../../assets/img/test-img/Logo.jpg";
 
 // import MindMapCards from "../../components/mindMapCards/mindMapCards";
 // import TeamSection from "../../components/Team-Section/teamSection";
-
 
 import { Addshrink } from "../../utils";
 import Preloader from "../../components/Preloader";
 import data from "../../data/data-layouts/data-Head.json";
 
 function Head({ Title }) {
+  useEffect(() => {
+    Addshrink();
+  }, [window.pageYOffset]);
+
   const homeRef = useRef();
   const manifestoRef = useRef();
 
@@ -57,32 +61,10 @@ function Head({ Title }) {
     if (anchorId === "aboutus") aboutusRef.current.scrollIntoView();
     if (anchorId === "contactus") contactusRef.current.scrollIntoView();
     if (anchorId === "teamSection") teamSectionRef.current.scrollIntoView();
-
   }, [anchorId]);
-
-  // --------------------------------------------
-  // const [navbar, setNavbar] = useState(false)
-
-  // const changeBackground = () => {
-  //   console.log(window.scrollY);
-  //   if (window.scrollY >= 20.66666793823242 ) {
-  //     setNavbar(true)
-  //   } else {
-  //     setNavbar(false)
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   changeBackground()
-  //   window.addEventListener("scroll", changeBackground);
-
-  // })
 
   return (
     <>
-      {/* <Preloader Title={Title} /> */}
-      {/* <div className= {navbar ? ("background-color") : ("")}> */}
-
       <nav
         className=" navbar navbar-expand-lg background-color  navbar-white  fixed-top"
         id="banner"
@@ -91,7 +73,6 @@ function Head({ Title }) {
           <AnchorLink className="navbar-brand">
             <span>
               <img src={Logo} alt="logo" height="100px" width="100px" />
-              {/* <h4 className="navbar-logo-style">FAPE</h4> */}
             </span>
           </AnchorLink>
 
@@ -119,36 +100,19 @@ function Head({ Title }) {
               </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#aboutus">
-                 Work
+                  Work
                 </AnchorLink>
               </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#team">
-               Collection
+                  Collection
                 </AnchorLink>
               </li>
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#getstarted">
-               Get Started
+                  Get Started
                 </AnchorLink>
               </li>
-              {/* <li className="nav-item">
-                <AnchorLink className="nav-link" href="#team">
-                  Manifesto
-                </AnchorLink>
-              </li> */}
-              {/* <li className="nav-item">
-                <AnchorLink className="nav-link" href="#team">
-             NFT
-                </AnchorLink>
-              </li> */}
-
-              {/* <li className="nav-item">
-                <AnchorLink className="nav-link" href="#mindmap">
-                  Mind Map
-                </AnchorLink>
-              </li> */}
-            
 
               <li className="nav-item">
                 <AnchorLink className="nav-link" href="#contactus">
@@ -159,27 +123,24 @@ function Head({ Title }) {
           </div>
         </div>
       </nav>
-      {/* </div> */}
 
       <div>
         <section id="home">
           <HeroContainer />
         </section>
-        <section id="aboutus" >
+        <section id="aboutus">
           <AboutUs />
         </section>
-      
 
-      
-        <section id="team" >
+        <section id="team">
           <ListedItemsContainer />
         </section>
-        <section id="getstarted" >
-          <GetStarted/>
+        <section id="getstarted">
+          <GetStarted />
         </section>
-      
-       
-        <section id="contactus" >
+
+        <section id="contactus">
+          {/* <Subscribe /> */}
           <Footer />
         </section>
       </div>

@@ -1,0 +1,41 @@
+.subscribe-display{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.input-email-style{
+    height: 56px;
+    min-width: 400px;
+    margin-right: 16px;
+    margin-bottom: 0px;
+    padding: 16px 20px;
+    border: 0px none #000;
+    border-radius: 4px;
+    background-color: #262626;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-family: 'Messina Sans Web', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+}
+.subscribe-button-style{
+    height: 56px;
+    padding: 4px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #0c0c0c;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-family: 'Messina Sans Web', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    outline: none;
+
+}

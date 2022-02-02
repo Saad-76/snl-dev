@@ -3,7 +3,7 @@
 /* ##### 3.0 Wellcome Area CSS ##### */
 .hero-section{
     position: relative;
-    min-height: 700px;
+    min-height: 600px;
     /*background: url('../img/bg-img/header2.jpg') no-repeat bottom center;*/
     background-size: cover;
     display: flex;
@@ -77,26 +77,45 @@
     transition: 1s opacity; */
 
 }
-.moving-bg {
+/* .moving-bg {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 500em;
-    height: 70%;
-    opacity: 0.1;
-    visibility: inherit;
-    background: transparent url(../../assets/img/core-img/crypto.png) repeat-x scroll 0 100%;
-    /* background: transparent url(../../assets/img/test-img/ren_033.png) repeat-x scroll 0 100%; */
+    height: 70%; */
+    /* opacity: 0.1;
+    visibility: inherit; */
+    /* background: transparent url(../../assets/img/core-img/crypto.png) repeat-x scroll 0 100%; */
+    /* background: transparent url(../../assets/img/test-img/HomeBg.jpg) repeat-x scroll 0 100%; */
 
+    /* background: transparent url(../../assets/img/test-img/ren_033.png) repeat-x scroll 0 100%; */
+/* 
     -webkit-animation: cloudwash 60s linear infinite;
     -moz-animation: cloudwash 60s linear infinite;
     animation: cloudwash 60s linear infinite;
+} */
+.background-image-home-section{
+    background-image: url("../../assets/img/test-img/HomeBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position-y: -6rem;
 }
-
 
 @media (max-width: 991px){
     .hero-section.moving{
         background-position: left top;
+        }
+        .background-image-home-section{
+            background-image: url("../../assets/img/test-img/HomeBg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            /* height: 100vh; */
+            height: 113vh;
+            background-position-x: -23rem;
+            /* background-position-y: -6rem; */
         }
 }
 @-webkit-keyframes cloudwash {
